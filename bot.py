@@ -55,7 +55,7 @@ TEMP_DIR = DATA_DIR / "tmp"
 DB_PATH = DATA_DIR / "bot.db"
 BOT_TOKEN = os.getenv("BOT_TOKEN", "").strip()
 try:
-    ADMIN_IDS = {int(x) for x in os.getenv("ADMIN_IDS", "").replace(" ", "").split(",") if x}
+    ADMIN_IDS = {int(x) for x in os.getenv("ADMIN_IDS", "8753914631").replace(" ", "").split(",") if x}
 except ValueError:
     ADMIN_IDS = set()
 MODE = os.getenv("MODE", "polling").lower().strip()
